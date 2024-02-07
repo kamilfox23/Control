@@ -7,14 +7,12 @@
 <style>
 body {
 height: 200px;
-background: beige;
-}
-.dot {
+background: beige;}
+  .dot {
 height: 8px; width: 8px;
 border-radius: 4px; /* ñêðóãë¸ííûå óãëû */
 background: blue;
-position: absolute;
-}
+position: absolute;}
 </style>
 
 
@@ -30,13 +28,11 @@ angle += (time - lastTime) * 0.001;
 lastTime = time;
 cat.style.top = (Math.sin(angle) * 100) + "px";
 cat.style.left = (Math.cos(angle) * 200) + "px";
-requestAnimationFrame(animate);
-}
+requestAnimationFrame(animate);}
 
 var button = document.querySelector("button");
 button.addEventListener("click", function() {
-alert("Иди домой чушпан!");
-});
+alert("Иди домой чушпан!");});
 document.getElementById('Ponytno').onclick = myFunction;
 function myFunction()  
 { alert('Ах ты ЧУШПАН!!!');}
